@@ -99,21 +99,21 @@ server, database 등 관련 설정 파일
     인증 관련 미들웨어 (eg, passport)
   - error
     error handler
-- persistence
+- persistence\
   db connection
-- public
+- public<br>
   static view asset
-- repository
+- repository<br>
   repository ( orm handler )
-- test
+- test<br>
   test folder
-- views
+- views<br>
   static view page
-- index.ts
+- index.ts<br>
   entry point
-- app.ts
+- app.ts<br>
   config express
-- tsconfig.json
+- tsconfig.json<br>
   typescript config file
 
 ## 핵심 library
@@ -131,7 +131,7 @@ server, database 등 관련 설정 파일
       controller method는 일반적으로 call할 경우가 없기 때문에 api에 대한 설명으로 literal을 활용할 수 있다.
   </ol>
 - Q&A  
-  **Q** middleware 사용은 어떻게 하나요?
+  **Q** middleware 사용은 어떻게 하나요?<br>
   **A** userBefore decorator를 사용합니다.  
     multer 또한 마찬가지 입니다.
 
