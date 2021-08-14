@@ -7,3 +7,7 @@ main:
     url: /tags/
   - title: "Pages"
     url: /page-archive/
+  - title: "Diary"
+    url: /diary-archive/
+  - title: "life"
+    url: /page-archive/

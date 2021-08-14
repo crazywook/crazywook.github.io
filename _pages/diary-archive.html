@@ -1,0 +1,14 @@
+---
+layout: archive
+permalink: /diary-archive/
+title: "개발 일기"
+author_profile: true
+---
+<div>size: {{ site.diary | size }}</div>
+{% assign diaryByYear = site.diary | group_by_exp:"post", "post.date | date: '%Y'" %}
+{% for year in site.diary %}
+<h2 id="{{ year.name | slugify }}" class="archive__subtitle">{{ year.name }}</h2>
+<!-- {% for post in adsfyear.items %}
+    {% include archive-single.html %}
+  {% endfor %} -->
+{% endfor %}
