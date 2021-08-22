@@ -4,11 +4,10 @@ permalink: /diary-archive/
 title: "개발 일기"
 author_profile: true
 ---
-<div>size: {{ site.diary | size }}</div>
-{% assign diaryByYear = site.diary | group_by_exp:"post", "post.date | date: '%Y'" %}
-{% for year in site.diary %}
-<h2 id="{{ year.name | slugify }}" class="archive__subtitle">{{ year.name }}</h2>
-<!-- {% for post in adsfyear.items %}
+{% assign diaryByMonth = site.diary | group_by_exp:"diary", "diary.date | date: '%b'" %}
+{% for month in diaryByMonth %}
+<h2 id="{{ month.name | slugify }}" class="archive__subtitle">{{ month.name }}</h2>
+  {% for post in month.items %}
     {% include archive-single.html %}
-  {% endfor %} -->
+  {% endfor %}
 {% endfor %}
