@@ -1,3 +1,10 @@
+---
+layout: single
+title: "private repo docker build"
+author: Sungwook Kim
+categories: docker
+tag: [docker]
+---
 ```
 [+] Building 0.0s (1/2)                                                         
  => [internal] load build definition from .dockerfile                      0.0s
